@@ -36,7 +36,7 @@
 </script>
 ```
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528190425249.png" alt="image-20200528190425249" style="zoom: 25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528190425249.png" alt="image-20200528190425249" style="zoom: 25%;" />
 
 #### 对动态参数表达式的约束
 
@@ -44,7 +44,7 @@
 
 因此当我们把data中的`attributeName`改成`attributename`:
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528191300613.png" alt="image-20200528191300613" style="zoom: 25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528191300613.png" alt="image-20200528191300613" style="zoom: 25%;" />
 
 另外,动态参数表达式有一些语法约束，因为某些字符，如空格和引号，放在 HTML attribute 名里是无效的。如:
 
@@ -52,7 +52,7 @@
 <a v-bind:['foo' + bar]="url"> 超链接 </a>
 ```
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528192432413.png" alt="image-20200528192432413" style="zoom:25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528192432413.png" alt="image-20200528192432413" style="zoom:25%;" />
 
 **Invalid dynamic argument expression: attribute names cannot contain spaces, quotes, <, >, / or =. 无效的动态参数表达式:属性名不能包含:空格 引号 < > / =**
 
@@ -60,13 +60,13 @@
 
 动态参数预期会求出一个字符串，异常情况下值为 `null`。这个特殊的 `null` 值可以被显性地用于移除绑定。任何其它非字符串类型的值都将会触发一个警告。
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528193023832.png" alt="image-20200528193023832" style="zoom:25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528193023832.png" alt="image-20200528193023832" style="zoom:25%;" />
 
 ```javascript
 vm.attributename = null
 ```
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528193204781.png" alt="image-20200528193204781" style="zoom:25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528193204781.png" alt="image-20200528193204781" style="zoom:25%;" />
 
 **使用动态参数为一个动态的事件名绑定处理函数：**
 
@@ -93,8 +93,8 @@ vm.attributename = null
 </script>
 ```
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528200711959.png" alt="image-20200528200711959" style="zoom:25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528200711959.png" alt="image-20200528200711959" style="zoom:25%;" />
 
-<img src="C:/Users/HSJ/Desktop/markdown/Dynamic Arguments/Dynamic Arguments.assets/image-20200528200938098.png" alt="image-20200528200938098" style="zoom:25%;" />
+<img src="./Dynamic Arguments.assets/image-20200528200938098.png" alt="image-20200528200938098" style="zoom:25%;" />
 
 <img src=".\Dynamic Arguments.assets\image-20200528201056377.png" alt="image-20200528201056377" style="zoom:25%;" />
