@@ -1,0 +1,2 @@
+# dynamicArguments
+Vue dynamic arguments
